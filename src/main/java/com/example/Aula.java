@@ -4,11 +4,15 @@ import java.util.ArrayList;
 
 public class Aula {
     ArrayList<Studente> alunni;
-    String nome;
+    Integer numero;
+    String sezione;
+    String aula;
     
-    public Aula(String nome) {
+    public Aula(Integer numero, String sezione, String aula) {
         this.alunni = new ArrayList<>();
-        this.nome = nome;
+        this.numero = numero;
+        this.sezione = sezione;
+        this.aula = aula;
     }
 
     public void addStudente(Studente s){
@@ -17,7 +21,7 @@ public class Aula {
     @Override
     public String toString(){
         String st;
-        st = "Classe:"+nome+",";
+        st = "Classe:"+sezione+",";
         for(int i=0; i<alunni.size();i++){
             st = st + alunni.get(i).toString();
         }
