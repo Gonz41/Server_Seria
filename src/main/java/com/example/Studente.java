@@ -5,6 +5,8 @@ public class Studente {
     private String cognome;
     private String nascita;
 
+    public Studente(){}
+
     public Studente(String n, String cognome, String na){
         this.nome = n;
         this.cognome = cognome;
